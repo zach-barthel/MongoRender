@@ -17,9 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Default route:
 app.get('/', function(req, res) {
-  const myquery = req.query;
-  var outstring = 'Starting... ';
-  res.send(outstring);
+  res.send('Starting... ');
 });
 
 app.get('/say/:name', function(req, res) {
