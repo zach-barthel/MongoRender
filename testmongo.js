@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 // routes will go here
 
 // Default route:
-app.get('/', function(req, res) {
+app.get('/api/mongo/:item', function(req, res) {
   res.send('Starting... ');
 });
 
